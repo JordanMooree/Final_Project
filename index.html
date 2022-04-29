@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Game Store</title>
+    <link rel="shortcut icon" type="image/" href="./favicon.ico" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="scripts/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="logo">
+          <img class="logo-img" src="assets/img/logo.svg" alt="" />
+        </div>
+        <!--Cart (will use with JS as well)-->
+        <div class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </nav>
+    </header>
+    <!--Every product has a story-->
+    <section class="intro">
+      <div class="img-container">
+        <img src="assets/img/intro-pic.jpg" alt="" />
+        <!--Intro text-->
+        <div class="intro-text">
+          <h1 class="title">Every product has a story</h1>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="view-btn">View More</button>
+        </div>
+      </div>
+    </section>
+    <!--Featured categories-->
+    <section class="featured">
+      <div class="featured-content">
+        <h1 class="feature-heading">Featured Categories</h1>
+        <div class="category-wrapper">
+          <div class="category-card">
+            <i class="fa-solid fa-camera category-icon"></i>
+            <p class="icon-subtitle">Category Name</p>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-anchor category-icon"></i>
+            <p class="icon-subtitle">Category Name</p>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-mug-hot category-icon"></i>
+            <p class="icon-subtitle">Category Name</p>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-feather category-icon"></i>
+            <p class="icon-subtitle">Category Name</p>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-compass category-icon"></i>
+            <p class="icon-subtitle">Category Name</p>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-location-arrow category-icon"></i>
+            <p class="icon-subtitle">Category Name</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

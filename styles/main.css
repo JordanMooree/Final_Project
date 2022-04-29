@@ -1,0 +1,154 @@
+:root {
+  --main-clr: #fc0441;
+  --bg-clr: #3f3f3f;
+  --bg-secondary-clr: #171b29;
+
+  --icon-clr: #fd49c6;
+  --white: #ffffff; /* Used for buttons, text, headings*/
+
+  --subheading-text-clr: #9da1b2;
+  --link-text: #632fef;
+
+  --primary-btn-clr: #fa1772;
+
+  --body-clr: #24262b;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+/* Font size declarations */
+h1 {
+  font-size: 56px;
+}
+.subtitle {
+  font-size: 16px;
+  margin: 0 7em;
+}
+.icon-subtitle {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.3125rem;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: var(--body-clr);
+}
+
+a {
+  position: relative;
+
+  color: var(--white);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a:hover::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  right: 25%;
+  bottom: -15px;
+  border-bottom: 2px solid var(--white);
+  padding: 0 20px;
+}
+/* Navigation */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2em;
+  height: 120px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  padding: 0;
+}
+
+.logo-img {
+  transform: scale(0.4);
+}
+
+/* Intro section (Every product has a story) */
+
+.img-container {
+  position: relative;
+  height: 648px;
+  width: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.view-btn {
+  color: white;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 500px;
+  background-color: var(--primary-btn-clr);
+  font-weight: 400;
+}
+.view-btn:hover {
+  font-weight: 700;
+}
+
+/* Featured Category section */
+
+.featured-content {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.category-wrapper {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  justify-content: center;
+}
+
+.category-icon {
+  color: var(--primary-btn-clr);
+  padding: 0.6em;
+  background-color: var(--bg-clr);
+  border-radius: 50%;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+}
