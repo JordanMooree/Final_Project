@@ -14,6 +14,13 @@
   --body-clr: #24262b;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
 *,
 *::before,
 *::after {
@@ -45,7 +52,8 @@ h1 {
 .subtitle-inspiring,
 .subtitle-sales,
 .video-subtitle,
-.subtitle-news {
+.subtitle-news,
+.footer-subtitle {
   font-size: 16px;
 }
 
@@ -139,7 +147,8 @@ a:hover::after {
 /* Featured Category section */
 
 .featured,
-.trending {
+.trending,
+.footer {
   background-color: var(--bg-secondary-clr);
   padding: 3em 0;
 }
@@ -156,14 +165,20 @@ a:hover::after {
   justify-content: center;
 }
 
-.category-icon {
+.category-icon,
+.social-icon {
   color: var(--primary-btn-clr);
   padding: 0.6em;
   background-color: var(--bg-clr);
   border-radius: 50%;
 }
+.category-icon:hover,
+.social-icon:hover {
+  color: var(--white);
+}
 
-.category-card {
+.category-card,
+.social-links {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,6 +286,10 @@ a:hover::after {
 }
 
 /* Spotlight */
+.spotlight {
+  background: linear-gradient(to bottom, var(--main-clr), var(--icon-clr));
+  padding: 2.5em 0;
+}
 .spotlight h1 {
   margin-bottom: 1em;
 }
@@ -280,7 +299,8 @@ a:hover::after {
   gap: 2em;
   align-items: center;
 }
-.spotlight-content .view-btn {
+.spotlight-content .view-btn,
+.subscribe .view-btn {
   background-color: var(--white);
   color: #3f3f3f;
 }
@@ -308,4 +328,39 @@ a:hover::after {
   flex-direction: column;
   align-items: center;
   margin-top: 1.5em;
+}
+
+.news button {
+  margin-top: 3em;
+}
+
+/* Subscribe */
+.subscribe {
+  height: 208px;
+  background: linear-gradient(to right, var(--main-clr), var(--icon-clr));
+  margin: 3em 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-text__split {
+  display: flex;
+  align-items: center;
+  gap: 12em;
+}
+.btn-text__split h1 {
+  font-size: 44px;
+}
+
+/* Footer */
+.footer {
+  height: 457px;
+}
+.split {
+  display: flex;
+  justify-content: space-around;
+}
+.social-links {
+  flex-direction: row;
+  align-items: flex-start;
 }

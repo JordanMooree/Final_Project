@@ -1,0 +1,44 @@
+/* Source: https://gist.github.com/bartholomej/8415655 */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .listing-img {
+    width: 300px;
+  }
+  .listing-img__main {
+    width: 440px;
+  }
+  .news-img {
+    width: 280px;
+  }
+  .btn-text__split h1 {
+    font-size: 28px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .highlight-img {
+    height: 262px;
+    width: 350px;
+  }
+  .listing-img {
+    width: 215px;
+    height: 164px;
+  }
+  .listing-img__main {
+    width: 338px;
+    height: 262px;
+  }
+  .spotlight h1 {
+    margin-bottom: 0;
+  }
+  .video {
+    height: 452px;
+    width: 620px;
+  }
+  .news-img {
+    height: 184px;
+    width: 224px;
+  }
+  .btn-text__split h1 {
+    font-size: 26px;
+  }
+}
