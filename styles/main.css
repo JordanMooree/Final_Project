@@ -68,7 +68,7 @@ body {
 
 a {
   position: relative;
-
+  cursor: pointer;
   color: var(--white);
   text-decoration: none;
   font-size: 16px;
@@ -91,7 +91,26 @@ a:hover::after {
   margin: 0 2em 0 1em;
   height: 120px;
 }
-
+.cart {
+  cursor: pointer;
+  position: relative;
+}
+.badge {
+  background: rgba(0, 0, 0, 0.5);
+  width: 28px;
+  height: auto;
+  text-align: center;
+  margin: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  right: -18px;
+  font-size: 16px;
+  padding: 5px;
+}
+.cart:hover {
+  color: var(--primary-btn-clr);
+}
 .nav-list {
   list-style: none;
   display: flex;
@@ -138,6 +157,7 @@ a:hover::after {
   border-radius: 500px;
   background-color: var(--primary-btn-clr);
   font-weight: 400;
+  cursor: pointer;
 }
 .view-btn:hover,
 .product-btn:hover {
@@ -171,6 +191,7 @@ a:hover::after {
   padding: 0.6em;
   background-color: var(--bg-clr);
   border-radius: 50%;
+  cursor: pointer;
 }
 .category-icon:hover,
 .social-icon:hover {
@@ -262,6 +283,7 @@ a:hover::after {
 
 .product-btn {
   background-color: var(--bg-clr);
+  cursor: pointer;
 }
 
 /* Inspiring Products */

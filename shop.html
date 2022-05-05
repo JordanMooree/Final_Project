@@ -21,98 +21,122 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <script src="scripts/script.js"></script>
-    <link rel="stylesheet" href="/styles/shop.css">
+    <link rel="stylesheet" href="/styles/shop.css" />
   </head>
-<body>
+  <body>
     <header>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-          <div class="logo">
-            <img class="logo-img" src="assets/img/logo.svg" alt="" />
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="logo">
+          <img class="logo-img" src="assets/img/logo.svg" alt="" />
+        </div>
+        <!--Cart (will use with JS as well)-->
+        <div class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge" id="cart-count">0</span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img src="assets/img/Fifajpg.jpg" class="card-img-top" alt="FIFA" />
+            <div class="card-body">
+              <h3 class="card-title">FIFA 22</h3>
+              <h4 class="cost">Price: $60</h4>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
           </div>
-          <!--Cart (will use with JS as well)-->
-          <div class="cart" id="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/img/fortnite_.jpg"
+              class="card-img-top"
+              alt="fortnite"
+              width="200"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Fortnite</h3>
+              <h4 class="cost">Price: $60</h4>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
           </div>
-        </nav>
-      </header>
+        </div>
 
-      <div class = 'container'>
-          <div class = 'row'>
-              <div class = 'col-md-4 col-lg-4'>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Fifajpg.jpg" class="card-img-top" alt="FIFA">
-                    <div class="card-body">
-                      <h3 class="card-title">FIFA 22</h3>
-                      <h4 class="cost">Price: $60</h4>
-                      <a class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-              </div>
-
-              <div class = 'col-md-4 col-lg-4'>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/fortnite_.jpg" class="card-img-top" alt="fortnite" width="200">
-                    <div class="card-body">
-                      <h3 class="card-title">Fortnite</h3>
-                      <h4 class="cost">Price: $60</h4>
-                      <a  class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-              </div>
-
-              <div class = 'col-md-4 col-lg-4'>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/mario.jpg" class="card-img-top" alt="Mario" width="200">
-                    <div class="card-body">
-                      <h3 class="card-title">Mario</h3>
-                      <h4 class="cost">Price: $60</h4>
-                      <a class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-              </div>
-
-            
-              <div class = 'col-md-4 col-lg-4'>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/portal2.jpg" class="card-img-top" alt="portal2" width="200">
-                    <div class="card-body">
-                      <h3 class="card-title">Portal 2</h3>
-                      <h4 class="cost">Price: $60</h4>
-                      <a class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-              </div>
-
-              <div class = 'col-md-4 col-lg-4'>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/Wii-Sports---Nintendo-Wii.jpg" class="card-img-top" alt="Wii sports" width="200">
-                    <div class="card-body">
-                      <h3 class="card-title">Wii Sports</h3>
-                      <h4 class="cost">Price: $60</h4>
-                      <a class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-              </div>
-
-              <div class = 'col-md-4 col-lg-4'>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/shadow.jpg" class="card-img-top" alt="Shadow">
-                    <div class="card-body">
-                      <h3 class="card-title">Shadow of the Collossus</h3>
-                      <h4 class="cost">$60</h4>
-                      <a class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-              </div>
-
+        <div class="col-md-4 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/img/mario.jpg"
+              class="card-img-top"
+              alt="Mario"
+              width="200"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Mario</h3>
+              <h4 class="cost">Price: $60</h4>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
           </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/img/portal2.jpg"
+              class="card-img-top"
+              alt="portal2"
+              width="200"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Portal 2</h3>
+              <h4 class="cost">Price: $60</h4>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/img/Wii-Sports---Nintendo-Wii.jpg"
+              class="card-img-top"
+              alt="Wii sports"
+              width="200"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Wii Sports</h3>
+              <h4 class="cost">Price: $60</h4>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="assets/img/shadow.jpg"
+              class="card-img-top"
+              alt="Shadow"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Shadow of the Collossus</h3>
+              <h4 class="cost">$60</h4>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <script src = 'scripts/script.js'></script>
-</body>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
