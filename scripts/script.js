@@ -1,3 +1,4 @@
+//search on blog page
 let cards = document.querySelectorAll('.card')
     
 function Search() {
