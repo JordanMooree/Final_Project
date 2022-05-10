@@ -37,8 +37,18 @@
           <img class="logo-img" src="assets/img/logo.svg" alt="" />
         </div>
         <!--Cart (will use with JS as well)-->
-        <div class="cart" id="cart">
-          <i class="fa-solid fa-cart-shopping"></i>
+        <div class="cart">
+          <div class="dropdown-content" id="dropdown">
+            <h5>Your Cart</h5>
+            <ul id="append-items" class="append-items"></ul>
+            <h5 style="padding: 1em; color: var(--main-clr); font-weight: 800">
+              Total: $<span id="totalAmount">0</span>
+            </h5>
+            <button style="margin: 1em" class="purchase" id="purchase">
+              Purchase
+            </button>
+          </div>
+          <i class="fa-solid fa-cart-shopping" id="cart"></i>
           <span class="badge" id="cart-count">0</span>
         </div>
       </nav>
